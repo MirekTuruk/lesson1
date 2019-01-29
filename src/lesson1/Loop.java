@@ -1,6 +1,6 @@
 package lesson1;
 
-public class Lesson
+public class Loop
 {
     public static void main(String[] args)
     {

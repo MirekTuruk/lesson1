@@ -3,7 +3,7 @@ package lesson2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lesson {
+public class Collection {
 
     public static void main(String[] args) {
 
