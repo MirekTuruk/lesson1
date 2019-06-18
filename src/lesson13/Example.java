@@ -1,17 +1,20 @@
 package lesson13;
 
+import java.util.Arrays;
+
 public class Example {
     public static void main(String[] args) {
-        String example = "W Szczebrzeszynie chrząszcz brzmi w " +
+        String example = "W  Szczebrzeszynie chrząszcz brzmi w " +
                 "trzcinie i Szczebrzeszyn z tego słynie";
-        int start = example.indexOf("ch");
-        int end = example.indexOf("nie", 20);
-        String substring = example.substring(start, end + 3);
+ if(example.matches("(.*)\\s{2}(.*)")){
+     System.out.println("Napis ma dwie spacje");
+ }
+example = example.replaceAll("\\s{2,}", " ");
+ example = example.replaceAll("\\s? i Szczebrzeszyn", "\n\ri Szczebrzeszyn");
 
-        System.out.println(example.length());
-        System.out.println(example.charAt(0));
-        System.out.println(substring);
-        System.out.println(example.toUpperCase());
+        System.out.println(example);
 
+        String [] split = example.split(" ");
+        System.out.println(Arrays.toString(split));
     }
 }
